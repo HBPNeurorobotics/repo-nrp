@@ -13,5 +13,6 @@ You can use this manifest to download the sources using [repo](https://code.goog
 
 To download all the sources required to run the NRP:
 
+    cd $HBP
     repo -u git@github.com:HBPNeurorobotics/repo-nrp.git
     repo sync
