@@ -4,7 +4,7 @@
   <remote  name="epfl-nrp" fetch="ssh://bbpcode.epfl.ch/neurorobotics"/>
   <remote  name="epfl-platform" fetch="ssh://bbpcode.epfl.ch/platform/hbp"/>
   <remote  name="epfl-jenkins" fetch="ssh://kaiser@bbpcode.epfl.ch/infra/jenkins"/>
-  <remote  name="github" fetch="git@github.com"/>
+  <remote  name="nest" fetch="git@github.com:nest"/>
 
   <default revision="refs/heads/master" remote="epfl-nrp" sync-j="4"/>
 
@@ -18,7 +18,7 @@
   <project name="retina" path="retina"/>
 
   <!-- nest -->
-  <project name="nest/nest-simulator" path="nest" remote="github" revision="v2.2.2"/>
+  <project name="nest-simulator" path="nest" remote="nest" revision="v2.2.2"/>
 
   <!-- gazebo -->
   <project name="sdformat" path="sdformat"/>
