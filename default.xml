@@ -18,7 +18,7 @@
   <project name="retina" path="retina"/>
 
   <!-- nest -->
-  <project name="nest/nest-simulator" path="nest" revision="v2.2.2"/>
+  <project name="nest/nest-simulator" path="nest" remote="github" revision="v2.2.2"/>
 
   <!-- gazebo -->
   <project name="sdformat" path="sdformat"/>
