@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="epfl"
+           fetch="ssh://kaiser@bbpcode.epfl.ch/neurorobotics"/>
+  <default revision="refs/heads/master" remote="epfl" sync-j="4"/>
+
+  <project name="CLE" remote="epfl" path="CLE"/>
+  <project name="ExDBackend" remote="epfl" path="ExDBackend"/>
+</manifest>
