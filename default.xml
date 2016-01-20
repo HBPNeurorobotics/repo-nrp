@@ -6,7 +6,7 @@
   <remote  name="epfl-jenkins" fetch="ssh://kaiser@bbpcode.epfl.ch/infra/jenkins"/>
   <remote  name="github" fetch="ssh://git@github.com"/>
 
-  <default branch="master" remote="epfl-nrp" sync-j="4"/>
+  <default revision="master" remote="epfl-nrp" sync-j="4"/>
 
 
   <!-- core packages -->
