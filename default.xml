@@ -6,7 +6,7 @@
   <remote  name="epfl-jenkins" fetch="ssh://kaiser@bbpcode.epfl.ch/infra/jenkins"/>
   <remote  name="github" fetch="ssh://git@github.com"/>
 
-  <default revision="refs/heads/master" remote="epfl-nrp" sync-j="4"/>
+  <default branch="master" remote="epfl-nrp" sync-j="4"/>
 
 
   <!-- core packages -->
@@ -17,8 +17,9 @@
   <project name="Models" path="Models"/>
   <project name="retina" path="retina"/>
 
-  <!-- nest -->
+  <!-- github -->
   <project name="HBPNeurorobotics/nest-simulator" path="nest" remote="github"/>
+  <project name="HBPNeurorobotics/repo-nrp" path="repo-nrp" remote="github"/>
 
   <!-- gazebo -->
   <project name="sdformat" path="sdformat"/>
