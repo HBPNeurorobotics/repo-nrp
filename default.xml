@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="epfl"
-           fetch="ssh://bbpcode.epfl.ch/neurorobotics"/>
-  <default revision="refs/heads/master" remote="epfl" sync-j="4"/>
+  <remote  name="epfl-nrp" fetch="ssh://bbpcode.epfl.ch/neurorobotics"/>
+  <remote  name="epfl-platform" fetch="ssh://bbpcode.epfl.ch/platform/hbp"/>
+  <remote  name="epfl-jenkins" fetch="ssh://kaiser@bbpcode.epfl.ch/infra/jenkins"/>
+  <remote  name="github" fetch="git@github.com"/>
 
-  <project name="CLE" remote="epfl" path="CLE"/>
-  <project name="ExDBackend" remote="epfl" path="ExDBackend"/>
+  <default revision="refs/heads/master" remote="epfl-nrp" sync-j="4"/>
+
+
+  <!-- core packages -->
+  <project name="CLE" path="CLE"/>
+  <project name="ExDBackend" path="ExDBackend"/>
+  <project name="ExDFrontend" path="ExDFrontend"/>
+  <project name="gzweb" path="gzweb"/>
+  <project name="Models" path="Models"/>
+  <project name="retina" path="retina"/>
+
+  <!-- nest -->
+  <project name="nest/nest-simulator" path="nest" revision="v2.2.2"/>
+
+  <!-- gazebo -->
+  <project name="sdformat" path="sdformat"/>
+  <project name="bulletphysics" path="bulletphysics"/>
+  <project name="GazeboRosPackages" path="GazeboRosPackages"/>
+  <project name="gazebo" path="gazebo"/>
+
+  <!-- documentation and devOps -->
+  <project name="hbp-documentation" path="hbp-documentation" remote="epfl-platform"/>
+  <project name="jjb-neurorobotics" path="jjb-neurorobotics" remote="epfl-jenkins"/>
+
 </manifest>
