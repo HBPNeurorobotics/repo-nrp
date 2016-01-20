@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="epfl"
-           fetch="ssh://kaiser@bbpcode.epfl.ch/neurorobotics"/>
+           fetch="ssh://bbpcode.epfl.ch/neurorobotics"/>
   <default revision="refs/heads/master" remote="epfl" sync-j="4"/>
 
   <project name="CLE" remote="epfl" path="CLE"/>
